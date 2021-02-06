@@ -1,6 +1,6 @@
 # JokeEngine
-Ecig Dev Test
+Job application dev test
 
-Uses Basic Vue
+Uses Basic Vuejs
 File get contents (not curl) for rest api
 json decode encode
