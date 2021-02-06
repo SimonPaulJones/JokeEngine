@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="template/css/min/style.css" rel="stylesheet">
+  <title>{{ title }}</title>
+</head>
+
+<body>
+  <div class="container" id="app">
+    <h1>{{ pagetitle }}</h1>
+    {{ form }}
+    <transition-group name="fade" mode="out-in">
+      <div v-for="(joke, index) in jokes" class="jbox clearfix" v-bind:key="index">
+        <div class="joke" v-html="joke.text"></div>
+      </div>
+    </transition-group>
+    <div class="clearfix"></div>
+  </div>
+  <script src="template/js/vue.js"></script>
+  <script src="template/js/scripts.js"></script>
+</body>
+</html>
